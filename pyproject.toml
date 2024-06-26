@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ml4gw-study"
+version = "0.1.0"
+description = "Repository to try out ml4gws functionality."
+authors = ["Andy Chen <andy.c.80297@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.12"
+
+law = "0.1.18"
+lightning = "2.3.0"
+ml4gw-hermes = {path = "./hermes", develop = true}
+mldatafind = {path = "./mldatafind", develop = true}
+ml4gw = {path = "./ml4gw", develop = true}
+numpy = "1.26.3"
+ipykernel = "^6.29.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
